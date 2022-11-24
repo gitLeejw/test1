@@ -1,0 +1,39 @@
+자료구조
+
+중요
+
+Array = 배열
+ex int[10] arr = {1,3,6,4,2,5,7,10,9,8}; = 정적인 자료구조 총량 변동불가
+arr[0] =3; arr[0~9] 
+
+서로 반대 array 와 list
+
+List = 동적인 자료구조, 총량 변동 가능.
+List<int> a = new List<>();
+a.add(3);
+a.get(0); = 3
+a.add(10);
+a.get(1); = 10
+a.remove(0); // 삭제기능 0번째 값 삭제 값을 바꾸더라도 효율적이지못함
+a.get(0); = 10
+
+
+Stack 후입선출 
+Stack<Integer> stack = new Stack<>();
+stack.add(2);
+stack.add(5);
+stack.add(7);
+stack.pop(); ==7 // 2번 값만불러오고 삭제
+stack.peek(); 
+서로 반대 stack 과 queue 
+
+Queue 선입선출 
+Queue<Integer> queue = new Queue<>();
+queue.add(2); // 0번 삭제되고 아래 값만 불러옴
+queue.add(5);
+queue.add(7);
+
+queue.pop(); ==2
+queue.peek(); 
+queue.get(0) = 5 
+
